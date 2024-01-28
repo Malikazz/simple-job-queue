@@ -7,13 +7,13 @@ I have a use case currently where their is no usable memory data base on the ser
 ## General use
 The system will rely on a toml file `settings.toml` to supply the apps setup. Basic setup will include the following settings.
 ```toml
-host = <the-host>
-max_queue_time = <some-ms-int>
-max_db_size = <max-db-in-bytes>
+host = "localhost"
+max_queue_time_ms = 600000
+max_db_size = 2147483648
 
 # Only required if your connecting to an external db
 [database]
-enabled = <bool>
-port = <some-port>
-ip = <some-id>
+enabled = false
+port = 0000
+ip = 127.0.0.1
 ```
